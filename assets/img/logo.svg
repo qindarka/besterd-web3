@@ -1,27 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 88" role="img" aria-label="Besterd Mechanical">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 130" role="img" aria-label="Besterd Mechanical">
   <title>Besterd Mechanical</title>
   <defs>
-    <linearGradient id="bm-badge" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f2a47"/>
-      <stop offset="100%" stop-color="#1d4f8a"/>
+    <!-- Chrome / metallic black gradient for "BESTERD" -->
+    <linearGradient id="chrome-text" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#3a3a3a"/>
+      <stop offset="35%" stop-color="#0a0a0a"/>
+      <stop offset="55%" stop-color="#0a0a0a"/>
+      <stop offset="80%" stop-color="#2a2a2a"/>
+      <stop offset="100%" stop-color="#4a4a4a"/>
+    </linearGradient>
+
+    <!-- Silver swoosh gradient -->
+    <linearGradient id="swoosh-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"  stop-color="#9ca3af"/>
+      <stop offset="50%" stop-color="#e5e7eb"/>
+      <stop offset="100%" stop-color="#4b5563"/>
+    </linearGradient>
+
+    <!-- Subtle highlight along top of text letters -->
+    <linearGradient id="text-shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <g>
-    <!-- Badge -->
-    <rect x="2" y="6" width="76" height="76" rx="14" fill="url(#bm-badge)"/>
-    <!-- Accent corner -->
-    <path d="M2 20 L2 6 L16 6 Z" fill="#f59e0b"/>
-    <!-- Monogram BM -->
-    <g fill="#ffffff" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="44" letter-spacing="-2">
-      <text x="14" y="58">B</text>
-      <text x="42" y="58">M</text>
-    </g>
-    <!-- Underline accent -->
-    <rect x="14" y="64" width="52" height="3" rx="1.5" fill="#f59e0b"/>
+
+  <!-- Sweeping silver swoosh (behind text) -->
+  <g opacity="0.85">
+    <path d="M 6 96
+             C 90 130, 230 116, 360 70
+             C 380 62, 408 50, 432 48"
+          fill="none" stroke="url(#swoosh-grad)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 14 102
+             C 100 138, 240 122, 372 78
+             C 392 70, 416 60, 436 58"
+          fill="none" stroke="url(#swoosh-grad)" stroke-width="1.5" stroke-linecap="round" opacity="0.55"/>
   </g>
-  <!-- Wordmark -->
-  <g font-family="'Helvetica Neue', Arial, sans-serif" fill="#0f2a47">
-    <text x="96" y="46" font-size="26" font-weight="800" letter-spacing="2">BESTERD</text>
-    <text x="96" y="70" font-size="14" font-weight="500" letter-spacing="6" fill="#5a6b80">MECHANICAL</text>
+
+  <!-- Canadian flag (top-right) -->
+  <g transform="translate(404, 8)">
+    <rect x="0"  y="0" width="6"  height="16" fill="#d52b1e"/>
+    <rect x="6"  y="0" width="12" height="16" fill="#ffffff"/>
+    <rect x="18" y="0" width="6"  height="16" fill="#d52b1e"/>
+    <!-- Simplified 11-point maple leaf -->
+    <path transform="translate(12 8) scale(0.42)"
+          d="M0,-12 L2.2,-6 L7,-7 L5,-2 L11,0.5 L6.5,3 L8,8 L2,6 L0,12 L-2,6 L-8,8 L-6.5,3 L-11,0.5 L-5,-2 L-7,-7 L-2.2,-6 Z"
+          fill="#d52b1e"/>
+  </g>
+
+  <!-- BESTERD wordmark -->
+  <g font-family="'Oswald','Arial Narrow','Helvetica Neue',Impact,sans-serif" font-weight="700" letter-spacing="2">
+    <text x="8" y="78" font-size="68" fill="url(#chrome-text)"
+          font-style="italic" textLength="395" lengthAdjust="spacingAndGlyphs">BESTERD</text>
+    <!-- Top highlight overlay -->
+    <text x="8" y="78" font-size="68" fill="url(#text-shine)"
+          font-style="italic" textLength="395" lengthAdjust="spacingAndGlyphs"
+          aria-hidden="true">BESTERD</text>
+  </g>
+
+  <!-- MECHANICAL underline tag -->
+  <g font-family="'Oswald','Arial Narrow','Helvetica Neue',sans-serif" font-weight="500">
+    <text x="9" y="115" font-size="26" fill="#0a0a0a"
+          letter-spacing="9" textLength="392" lengthAdjust="spacingAndGlyphs">MECHANICAL</text>
   </g>
 </svg>
