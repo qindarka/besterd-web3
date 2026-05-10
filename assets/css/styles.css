@@ -592,11 +592,7 @@ p  { margin: 0 0 1em; }
 .site-footer ul li { margin-bottom: 10px; font-size: .94rem; }
 .site-footer a { color: #cbd5d9; }
 .site-footer a:hover { color: var(--red); }
-.site-footer .brand-block img {
-  height: 60px; margin-bottom: 16px; width: auto;
-  background: #fff; padding: 10px 14px; border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0,0,0,.25);
-}
+.site-footer .brand-block img { height: 64px; margin-bottom: 16px; width: auto; }
 .site-footer .brand-block p { color: #94a3b8; font-size: .95rem; max-width: 320px; }
 .legal {
   margin-top: 40px; padding-top: 22px;
