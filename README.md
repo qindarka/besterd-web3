@@ -41,10 +41,7 @@ python3 -m http.server 8080
     ├── css/styles.css
     ├── js/main.js
     └── img/
-        ├── logo.svg        # Wordmark — chrome on light backgrounds
-        ├── logo-light.svg  # Wordmark — bright chrome for dark backgrounds
-        ├── logomark.svg    # Square BM badge
-        └── favicon.svg
+        └── bm_logo.gif     # The official BM logo, used as-is
 ```
 
 ## Editing content
@@ -66,9 +63,8 @@ Everything is in `index.html`. Common updates:
 
 ## Branding
 
-The logo files in `assets/img/` are clean SVG re-renders of the original
-Besterd "BESTERD MECHANICAL" mark — italic chrome wordmark, silver swoosh,
-small Canadian flag accent.
+The logo at `assets/img/bm_logo.gif` is the official Besterd Mechanical
+mark and is used as-is — do not redraw or substitute.
 
 Palette (CSS custom properties at the top of `assets/css/styles.css`):
 
@@ -80,8 +76,7 @@ Palette (CSS custom properties at the top of `assets/css/styles.css`):
 | Canadian red    | `#d52b1e`  |
 | Page background | `#ffffff` / `#f6f7f8` |
 
-If the client wants a different accent, change `--red` (and update the SVG
-flag fills) in `assets/css/styles.css` and the four logo SVGs.
+To change the accent across the site, update `--red` in `assets/css/styles.css`.
 
 ## Contact form
 
