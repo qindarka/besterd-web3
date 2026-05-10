@@ -440,22 +440,27 @@ p  { margin: 0 0 1em; }
 
 .process .step {
   background: #fff; border-radius: var(--radius);
-  padding: 28px 22px; border: 1px solid var(--line);
+  padding: 38px 22px 28px; border: 1px solid var(--line);
   position: relative;
+  overflow: hidden;
+}
+.process .step::after {
+  content: "";
+  position: absolute; left: 22px; top: 0;
+  width: 36px; height: 4px;
+  background: var(--red);
+  border-radius: 0 0 4px 4px;
 }
 .process .step::before {
   counter-increment: step;
   content: counter(step, decimal-leading-zero);
-  position: absolute; right: 18px; top: 16px;
-  font-size: 2.2rem; font-weight: 800; color: var(--bg-alt);
+  position: absolute; right: 18px; top: 14px;
+  font-size: 2rem; font-weight: 700; color: var(--red);
   line-height: 1; font-family: var(--font-display);
+  opacity: .9;
 }
 .process .step h3 { font-size: 1.08rem; margin-bottom: 6px; }
 .process .step p  { color: var(--slate); font-size: .92rem; margin: 0; }
-.process .step .dot {
-  width: 10px; height: 10px; border-radius: 50%; background: var(--red);
-  margin-bottom: 14px;
-}
 
 /* ---------- Projects (tile band) ---------- */
 .project-grid {
