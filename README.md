@@ -7,7 +7,7 @@ to deploy to **Cloudflare Pages**.
 ## Deploy to Cloudflare Pages
 
 1. Sign in to the Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git**.
-2. Select this GitHub repository and the branch you want to publish (e.g. `main` for production, or this feature branch for a preview).
+2. Select this GitHub repository and the branch you want to publish.
 3. Build settings:
    - **Framework preset:** *None*
    - **Build command:** *(leave blank)*
@@ -29,7 +29,9 @@ python3 -m http.server 8080
 
 ```
 .
-├── index.html              # Single-page site (Hero / Services / About / Industries / Process / Contact)
+├── index.html              # Single-page site
+│                           #   Hero / Trust / Services / About / Industries
+│                           #   Projects / Process / Qualifications / Contact
 ├── 404.html                # Custom not-found page
 ├── _headers                # Cloudflare Pages security & caching headers
 ├── _redirects              # Cloudflare Pages redirects
@@ -39,9 +41,9 @@ python3 -m http.server 8080
     ├── css/styles.css
     ├── js/main.js
     └── img/
-        ├── logo.svg        # Wordmark + monogram (dark text — for light backgrounds)
-        ├── logo-light.svg  # Wordmark + monogram (white text — for dark backgrounds)
-        ├── logomark.svg    # Square BM badge only
+        ├── logo.svg        # Wordmark — chrome on light backgrounds
+        ├── logo-light.svg  # Wordmark — bright chrome for dark backgrounds
+        ├── logomark.svg    # Square BM badge
         └── favicon.svg
 ```
 
@@ -54,26 +56,32 @@ Everything is in `index.html`. Common updates:
 | Phone number               | Search `519` — appears in header CTA, hero, footer, schema |
 | Email address              | Search `info@besterdmechanical.ca`                |
 | Address                    | Search `1070 Wilton Grove`                        |
-| Services list              | `<section id="services">` in `index.html`         |
+| Leadership                 | Search `Ian Roff`                                 |
+| Services list              | `<section id="services">`                         |
 | About copy                 | `<section id="about">`                            |
 | Industries served          | `<section id="sectors">`                          |
+| Projects                   | `<section id="projects">`                         |
+| Affiliations               | `<section id="qualifications">`                   |
 | Map                        | The `<iframe>` near the bottom of `#contact`      |
 
 ## Branding
 
-The logo files in `assets/img/` are clean SVG re-interpretations of the original
-Besterd "BM" mark. Colors used throughout the site:
+The logo files in `assets/img/` are clean SVG re-renders of the original
+Besterd "BESTERD MECHANICAL" mark — italic chrome wordmark, silver swoosh,
+small Canadian flag accent.
 
-| Role          | Hex        |
-| ------------- | ---------- |
-| Primary navy  | `#0f2a47`  |
-| Steel blue    | `#1d4f8a`  |
-| Amber accent  | `#f59e0b`  |
-| Page bg       | `#ffffff` / `#f7f9fc` |
+Palette (CSS custom properties at the top of `assets/css/styles.css`):
 
-If the client wants different brand colors, swap the CSS custom properties at
-the top of `assets/css/styles.css` (`--navy`, `--navy-600`, `--amber`) and the
-fills inside the SVG logos.
+| Role            | Hex        |
+| --------------- | ---------- |
+| Black (primary) | `#0a0a0a`  |
+| Steel           | `#4b5563`  |
+| Silver / chrome | `#d1d5db`  |
+| Canadian red    | `#d52b1e`  |
+| Page background | `#ffffff` / `#f6f7f8` |
+
+If the client wants a different accent, change `--red` (and update the SVG
+flag fills) in `assets/css/styles.css` and the four logo SVGs.
 
 ## Contact form
 

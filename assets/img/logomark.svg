@@ -2,23 +2,29 @@
   <title>Besterd Mechanical</title>
   <defs>
     <linearGradient id="m-bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="0%"  stop-color="#1f1f1f"/>
       <stop offset="100%" stop-color="#000000"/>
     </linearGradient>
     <linearGradient id="m-shine" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0%"  stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="m-chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#d8dadc"/>
+      <stop offset="100%" stop-color="#ffffff"/>
     </linearGradient>
   </defs>
-  <rect x="2" y="2" width="92" height="92" rx="16" fill="url(#m-bg)"/>
-  <rect x="2" y="2" width="92" height="46" rx="16" fill="url(#m-shine)"/>
+  <rect x="2" y="2" width="92" height="92" rx="18" fill="url(#m-bg)"/>
+  <rect x="2" y="2" width="92" height="46" rx="18" fill="url(#m-shine)"/>
   <!-- Silver swoosh -->
-  <path d="M 10 70 C 35 84, 65 78, 88 50"
-        fill="none" stroke="#d1d5db" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+  <path d="M 8 72 C 36 88, 66 82, 90 50"
+        fill="none" stroke="#d1d5db" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
   <!-- BM monogram -->
-  <text x="48" y="62" text-anchor="middle"
+  <text x="48" y="64" text-anchor="middle"
         font-family="'Oswald','Arial Narrow',Impact,sans-serif"
-        font-weight="700" font-size="48" fill="#ffffff" font-style="italic" letter-spacing="-2">BM</text>
-  <!-- Canadian red accent dot -->
-  <circle cx="80" cy="20" r="6" fill="#d52b1e"/>
+        font-weight="700" font-size="50" fill="url(#m-chrome)"
+        font-style="italic" letter-spacing="-2">BM</text>
+  <!-- Canadian red accent -->
+  <rect x="72" y="14" width="12" height="14" rx="1.5" fill="#d52b1e"/>
 </svg>

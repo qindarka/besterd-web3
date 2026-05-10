@@ -7,27 +7,31 @@
 <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
 <style>
-  :root { --navy:#0f2a47; --amber:#f59e0b; }
+  :root { --black:#0a0a0a; --red:#d52b1e; }
   *{box-sizing:border-box}
   html,body{margin:0;height:100%}
   body{
-    font-family:"Inter",system-ui,sans-serif;color:#e5edf7;
-    background:radial-gradient(60% 50% at 80% 20%,rgba(245,158,11,.25),transparent 60%),linear-gradient(135deg,#07172b 0%,var(--navy) 60%,#11365b 100%);
+    font-family:"Inter",system-ui,sans-serif;color:#e7e9ec;
+    background:
+      radial-gradient(60% 50% at 80% 20%,rgba(213,43,30,.22),transparent 60%),
+      radial-gradient(50% 50% at 0% 100%,rgba(75,85,99,.30),transparent 60%),
+      linear-gradient(135deg,#050505 0%,var(--black) 50%,#1a1a1a 100%);
     display:grid;place-items:center;text-align:center;padding:32px;
   }
   .wrap{max-width:560px}
-  img{height:64px;margin-bottom:24px}
-  h1{font-size:6rem;margin:0;color:var(--amber);font-weight:800;letter-spacing:-.04em;line-height:1}
-  h2{font-size:1.6rem;margin:.4em 0 .6em}
-  p{color:#cbd5e1;line-height:1.6}
+  img{height:72px;margin-bottom:24px}
+  h1{font-family:"Oswald",sans-serif;font-size:7rem;margin:0;color:var(--red);font-weight:700;letter-spacing:-.04em;line-height:1}
+  h2{font-family:"Oswald",sans-serif;font-size:1.7rem;margin:.4em 0 .6em;color:#fff;font-weight:600}
+  p{color:#cbd5d9;line-height:1.6}
   .btn{
     display:inline-flex;align-items:center;gap:8px;
-    background:var(--amber);color:#0b1320;padding:12px 22px;border-radius:999px;
-    text-decoration:none;font-weight:700;margin-top:20px;
+    background:var(--red);color:#fff;padding:13px 26px;border-radius:999px;
+    text-decoration:none;font-weight:600;margin-top:24px;border:2px solid var(--red);
+    transition:background .15s ease,border-color .15s ease,color .15s ease;
   }
-  .btn:hover{background:#fff}
+  .btn:hover{background:#fff;color:var(--black);border-color:#fff}
 </style>
 </head>
 <body>
