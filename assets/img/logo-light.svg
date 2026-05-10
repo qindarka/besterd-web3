@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 88" role="img" aria-label="Besterd Mechanical">
+  <title>Besterd Mechanical</title>
+  <g>
+    <rect x="2" y="6" width="76" height="76" rx="14" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.25"/>
+    <path d="M2 20 L2 6 L16 6 Z" fill="#f59e0b"/>
+    <g fill="#ffffff" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="44" letter-spacing="-2">
+      <text x="14" y="58">B</text>
+      <text x="42" y="58">M</text>
+    </g>
+    <rect x="14" y="64" width="52" height="3" rx="1.5" fill="#f59e0b"/>
+  </g>
+  <g font-family="'Helvetica Neue', Arial, sans-serif" fill="#ffffff">
+    <text x="96" y="46" font-size="26" font-weight="800" letter-spacing="2">BESTERD</text>
+    <text x="96" y="70" font-size="14" font-weight="500" letter-spacing="6" fill="#cbd5e1">MECHANICAL</text>
+  </g>
+</svg>

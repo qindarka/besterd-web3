@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 88" role="img" aria-label="Besterd Mechanical">
+  <title>Besterd Mechanical</title>
+  <defs>
+    <linearGradient id="bm-badge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2a47"/>
+      <stop offset="100%" stop-color="#1d4f8a"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <!-- Badge -->
+    <rect x="2" y="6" width="76" height="76" rx="14" fill="url(#bm-badge)"/>
+    <!-- Accent corner -->
+    <path d="M2 20 L2 6 L16 6 Z" fill="#f59e0b"/>
+    <!-- Monogram BM -->
+    <g fill="#ffffff" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="44" letter-spacing="-2">
+      <text x="14" y="58">B</text>
+      <text x="42" y="58">M</text>
+    </g>
+    <!-- Underline accent -->
+    <rect x="14" y="64" width="52" height="3" rx="1.5" fill="#f59e0b"/>
+  </g>
+  <!-- Wordmark -->
+  <g font-family="'Helvetica Neue', Arial, sans-serif" fill="#0f2a47">
+    <text x="96" y="46" font-size="26" font-weight="800" letter-spacing="2">BESTERD</text>
+    <text x="96" y="70" font-size="14" font-weight="500" letter-spacing="6" fill="#5a6b80">MECHANICAL</text>
+  </g>
+</svg>
